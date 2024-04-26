@@ -1,0 +1,45 @@
+{
+  "Routes": [
+    //Customer
+    {
+      "UpstreamPathTemplate": "/gateway/customer/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamScheme": "https",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityAuthenticationScheme",
+        "AllowedScopes": [ "customerAPI" ]
+      },
+      "DownstreamPathTemplate": "/api/v1/customer/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7241
+        }
+      ]
+    },
+
+    //Product
+    {
+      "UpstreamPathTemplate": "/gateway/product/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+      "UpstreamScheme": "https",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityAuthenticationScheme",
+        "AllowedScopes": [ "productAPI" ]
+      },
+      "DownstreamPathTemplate": "/api/v1/product/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7280
+        }
+      ]
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7173"
+  }
+}

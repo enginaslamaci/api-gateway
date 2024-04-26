@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{E73F10B9-BD7E-4F76-99D7-15639332C7CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{9951B8FB-8CD8-46F7-9667-978ABAB8A32D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6B5466FC-9253-42CA-89D4-63B65AC6140B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customer.API", "Services\Customer.API\Customer.API.csproj", "{14BF8A3F-7397-4B3C-91CA-45F90C8C859E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.API", "Services\Product.API\Product.API.csproj", "{3BAC125B-151B-47C1-B247-0A1EC3675BE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{D73790B5-4F05-4B77-B91C-5C81A352E2CE}"
+	ProjectSection(SolutionItems) = preProject
+		docs\APIGateway.postman_collection.json = docs\APIGateway.postman_collection.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E73F10B9-BD7E-4F76-99D7-15639332C7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73F10B9-BD7E-4F76-99D7-15639332C7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73F10B9-BD7E-4F76-99D7-15639332C7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73F10B9-BD7E-4F76-99D7-15639332C7CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9951B8FB-8CD8-46F7-9667-978ABAB8A32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9951B8FB-8CD8-46F7-9667-978ABAB8A32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9951B8FB-8CD8-46F7-9667-978ABAB8A32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9951B8FB-8CD8-46F7-9667-978ABAB8A32D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BF8A3F-7397-4B3C-91CA-45F90C8C859E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BF8A3F-7397-4B3C-91CA-45F90C8C859E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BF8A3F-7397-4B3C-91CA-45F90C8C859E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BF8A3F-7397-4B3C-91CA-45F90C8C859E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BAC125B-151B-47C1-B247-0A1EC3675BE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAC125B-151B-47C1-B247-0A1EC3675BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAC125B-151B-47C1-B247-0A1EC3675BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAC125B-151B-47C1-B247-0A1EC3675BE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14BF8A3F-7397-4B3C-91CA-45F90C8C859E} = {6B5466FC-9253-42CA-89D4-63B65AC6140B}
+		{3BAC125B-151B-47C1-B247-0A1EC3675BE4} = {6B5466FC-9253-42CA-89D4-63B65AC6140B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A62B479B-AA3C-4740-89AF-0FC3863995C3}
+	EndGlobalSection
+EndGlobal
