@@ -8,6 +8,8 @@
 	Ocelot
 	IdentityServer4
 	JWT
+	RateLimit
+	CacheManager
 	
 ---------------------------
 	

@@ -1,3 +1,4 @@
+using Ocelot.Cache.CacheManager;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Values;
@@ -24,7 +25,7 @@ builder.Services.AddAuthentication()
                      options.RequireHttpsMetadata = false;
                  });
 
-builder.Services.AddOcelot();
+builder.Services.AddOcelot().AddCacheManager(options => options.WithDictionaryHandle());
 
 var app = builder.Build();
 

@@ -35,11 +35,27 @@
           "Host": "localhost",
           "Port": 7280
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "3s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      },
+      "FileCacheOptions": {
+        "TtlSeconds": 30,
+        "Region": "product_cache"
+      }
     }
 
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:7173"
+    "BaseUrl": "https://localhost:7173",
+    "RateLimitOptions": {
+      "DisableRateLimitHeaders": true,
+      "QuotaExceededMessage": "API calls quota exceeded!",
+      "HttpStatusCode": 429
+    }
   }
 }
